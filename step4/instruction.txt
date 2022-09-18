@@ -1,0 +1,75 @@
+1. Initialize:
+> cd step4
+> npm init -y
+
+2. Install Three.js:
+> npm install three 
+
+-> three.js added into dependencies of package.jason
+-> three.js files added into node_modules folder
+
+3. Install plugins: rollup
+> npm install rollup -D 
+> npm install rollup @rollup/plugin-node-resolve -D (--save-dev)
+
+4. Install plugins: Babel
+> npm install @rollup/plugin-babel --save-dev
+> npm install @babel/core -D 
+> npm install @babel/preset-env -D 
+
+5. index.html
+create index.html
+create styles.css
+
+6. rollup.config.js
+create rollup.config.js
+
+7. .babelrc
+create .babelrc
+
+8. package.jason
+modufy package.jason
+> "main": "app.js",
+
+> "scripts" : {
+>   build: "rollup -c",
+>   watch: "rollup -c -w"
+> },
+
+9. WASM setting
+./node_modules/three/examples/jsm/loaders/ifc/web-ifc.wasm 
+copy web-ifc.wasm to ./wasm
+
+10. app.js
+create app.js
+
+Note: import folder added "./node_modules/"
+Note: ifcManager needed to set WASM path: ifcLoader.ifcManager.setWasmPath("wasm/");
+
+11: Bundle
+> npm run build
+
+app.js -> bundle.js
+created bundle.js in ?.?s 
+
+
+
+---------
+References:
+
+20210626 Getting Start IFC.js by hiron
+https://www.youtube.com/watch?v=sDo6-F1tBPg
+
+See also the followings: 
+
+npm よく使うコマンドまとめ
+https://qiita.com/standard-software/items/2ac49a409688733c90e7
+
+きちんとわかる、npm install  第1回：PCにコマンドをインストールする
+https://www.codegrid.net/articles/2020-npm-install-1/
+
+npm入門
+https://qiita.com/maitake9116/items/7825d90c09f3e2f87dea
+
+入門者/初心者必見 npmでパッケージ管理するための基礎
+https://reffect.co.jp/html/npm-package-manager-basic-for-beginner
