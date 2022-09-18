@@ -46,12 +46,13 @@ create app.js
 Note: import folder added "./node_modules/"
 Note: ifcManager needed to set WASM path: ifcLoader.ifcManager.setWasmPath("wasm/");
 
-11: Bundle
+11: Bundle.js 
 > npm run build
 
 app.js -> bundle.js
 created bundle.js in ?.?s 
 
+12. Go Live to run on the Web browser
 
 
 ---------
