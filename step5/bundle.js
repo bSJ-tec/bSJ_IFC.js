@@ -70181,7 +70181,7 @@ async function pick(event) {
         console.log(id);
         const modelID = found.object.modelID;
         //const props = await ifc.getItemProperties(modelID, id, true);
-        const props = await ifc.getPropertySets(modelID,id, true );
+        const props = ifc.getPropertySets(modelID,id, true );
         console.log(props);
 
         // Showing properties on message-container
