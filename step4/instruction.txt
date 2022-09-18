@@ -1,3 +1,8 @@
+Instruction for IFC.js sample step4
+buildingSMART Japan
+2022/09/18
+
+--------------------------
 1. Initialize:
 > cd step4
 > npm init -y
@@ -55,7 +60,7 @@ created bundle.js in ?.?s
 12. Go Live to run on the Web browser
 
 
----------
+--------------------------
 References:
 
 20210626 Getting Start IFC.js by hiron
