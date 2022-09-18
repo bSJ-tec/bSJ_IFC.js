@@ -94,7 +94,7 @@ window.addEventListener("resize", () => {
 
 const ifcModels = [];
 const ifcLoader = new IFCLoader();
-ifcLoader.ifcManager.setWasmPath("wasm/")
+ifcLoader.ifcManager.setWasmPath("wasm/");
 // ifcLoader.ifcManager.setupThreeMeshBVH(
 //     acceleratedRaycast,
 //     computeBoundsTree,
