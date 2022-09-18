@@ -70169,6 +70169,8 @@ function cast(event) {
     return raycaster.intersectObjects(ifcModels);
 }
 
+const output = document.getElementById("id-output");
+
 async function pick(event) {
     const found = cast(event)[0];
     if (found) {
@@ -70178,8 +70180,13 @@ async function pick(event) {
         const id = ifc.getExpressId(geometry, index);
         console.log(id);
         const modelID = found.object.modelID;
-        const props = await ifc.getItemProperties(modelID, id, true);
+        //const props = await ifc.getItemProperties(modelID, id, true);
+        const props = await ifc.getPropertySets(modelID,id, true );
         console.log(props);
+
+        // Showing properties on message-container
+        output.innerHTML = JSON.stringify(props,null,2);
+
     }
 }
 
