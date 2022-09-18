@@ -1,5 +1,3 @@
-import 'three-mesh-bvh';
-
 /**
  * @license
  * Copyright 2010-2022 Three.js Authors
@@ -70042,6 +70040,12 @@ class IFCLoader extends Loader {
 	}
 
 }
+
+//import {
+//    acceleratedRaycast,
+//    computeBoundsTree,
+//    disposeBoundsTree
+//} from 'three-mesh-bvh';
 
 // Three.jsのシーンを作成します。
 const scene = new Scene();

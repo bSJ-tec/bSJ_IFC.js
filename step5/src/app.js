@@ -16,11 +16,11 @@ import {
 import {
     IFCLoader
 } from "three/examples/jsm/loaders/IFCLoader.js"; //"web-ifc-three";
-import {
-    acceleratedRaycast,
-    computeBoundsTree,
-    disposeBoundsTree
-} from 'three-mesh-bvh';
+//import {
+//    acceleratedRaycast,
+//    computeBoundsTree,
+//    disposeBoundsTree
+//} from 'three-mesh-bvh';
 
 // Three.jsのシーンを作成します。
 const scene = new Scene();
