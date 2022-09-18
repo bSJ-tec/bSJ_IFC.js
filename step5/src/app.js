@@ -16,6 +16,7 @@ import {
 import {
     IFCLoader
 } from "three/examples/jsm/loaders/IFCLoader.js"; //"web-ifc-three";
+
 //import {
 //    acceleratedRaycast,
 //    computeBoundsTree,
